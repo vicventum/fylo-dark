@@ -10,7 +10,7 @@
     }
 }
 
-@include media('>mobile') {
+@include media('>=mobile') {
     @for $i from 1 through 12 {
       .grid-mb-#{$i} {
         grid-column: span ($i);
@@ -18,7 +18,7 @@
     }
 }
   
-@include media('>tablet') {
+@include media('>=tablet') {
 @for $i from 1 through 12 {
     .grid-tb-#{$i} {
     grid-column: span ($i);
@@ -26,7 +26,7 @@
 }
 }
 
-@include media('>laptop') {
+@include media('>=laptop') {
 @for $i from 1 through 12 {
     .grid-lp-#{$i} {
     grid-column: span ($i);
@@ -34,7 +34,7 @@
 }
 }
 
-@include media('>desktop') {
+@include media('>=desktop') {
 @for $i from 1 through 12 {
     .grid-dt-#{$i} {
     grid-column: span ($i);

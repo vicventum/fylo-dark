@@ -35,21 +35,18 @@
 
     // Backgrounds  
     &-bg {
-        &--yellow {
-            background-color: $yellow-base;
+        &--intro {
+            background-color: $blueDarkIntro;
         }
-        &--dark {
-            background-color: $dark;
+        &--main {
+            background-color: $blueDarkMain;
         }
-        &--light {
-            background-color: $light;
+        &--testimonial {
+            background-color: $blueDarkTestimonial;
         }
-        &--red {
-            background-color: $red-base;
-        }
-        &--purple {
-            background-color: $purple-base;
-        }   
+        &--footer {
+            background-color: $blueDarkFooter;
+        } 
     }
     
     // Visibility
@@ -58,15 +55,15 @@
 
     &-hide-for-mobile {
         // Hide for tablet and mobile
-        // @include breakpoint-down(medium) {
-        //     display: none!important;
-        // }
+        @include media('<laptop') {
+            display: none!important;
+        }
     }
     &-hide-for-desktop {
         // Hide for desktop viewport widths
-        // @include breakpoint-up(large) {
-        //     display: none!important;
-        // }
+        @include media('>=laptop') {
+            display: none!important;
+        }
     }
     
     

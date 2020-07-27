@@ -13,17 +13,31 @@ html {
 }
 
 body {
-    // font-family: $bodyFont;
-    // color: $bodyFontColor;
-    
-    // overflow-x: hidden;
+    font-family: $bodyFontSize;
+    color: $light;
+    font-family: $bodyFont;
+    font-weight: $lightW;
+    color: $light;
+    overflow-x: hidden;
 
-    // &.no-scroll {
-    //     overflow: hidden;
-    // }
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    @include media('>=laptop') {
+
+    }
 }
-h1, h2, h3 {
-    margin: 0;
+h1, h2, h3, h4 {
+    font-family: $titleFont;
+    font-weight: $boldW;
+    line-height: 1.9;
+
+}
+p {
+    font-family: $bodyFont;
+    font-weight: $lightW;
+    line-height: 1.5;
 }
 
 ul {
@@ -34,13 +48,13 @@ ul {
 }
 
 a {
-    // font-weight: bold;
+    font-weight: $lightW;
     text-decoration: none;
-    // color: $light;
+    color: $light;
     transition: all .3s ease-in-out;
     cursor: pointer;
 
-    // &:hover{color: $yellow-base;}
+    &:hover{color: $cyanAccent;}
 }
 
 img {
