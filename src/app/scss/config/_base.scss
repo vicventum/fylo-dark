@@ -5,8 +5,8 @@
         margin: 0 auto;
     
         &--pall {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
             padding-left: 4rem;
             padding-right: 4rem;
     
@@ -28,8 +28,8 @@
             }
         }
         &--px {
-            padding-left: 5.5rem;
-            padding-right: 5.5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
         }
     
         &--pt {
@@ -56,9 +56,8 @@
     // Text
     &-tx {
         // Logo text
-        &-logo {
-            // font-family: $font-logo;
-            // color: $white;
+        &-subtitle {
+            font-size: $subtitleFontSize;
         }
 
         &-body {
@@ -71,7 +70,8 @@
     &-hd {
         font-size: $titleFontSize;
         &1 {
-            margin-bottom: rfs(6rem);
+            margin-top: rfs(2rem);
+            margin-bottom: rfs(3rem);
             
         }
 

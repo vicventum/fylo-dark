@@ -1,0 +1,31 @@
+.hero {
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: $zLast;
+        width: 100vw;
+        height: 100%;
+
+        background-size: contain;
+
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        background-image: url(../../img/bg-curvy-mobile.svg);
+        background-position: center 55vw;
+        // bg
+
+    }
+
+    &::after {
+        $size: 90vw;
+        background-image: linear-gradient(to bottom, transparent $size, $blueDarkMain $size);
+    }
+
+}

@@ -1,6 +1,7 @@
 .header {
     --hide: hidden;
-
+    
+    
     &.open {
         .overlay {
             visibility: initial;
@@ -28,6 +29,12 @@
         visibility: hidden;
     }
 
+    &__logo {
+        width: $logoWidht;
+        display: flex;
+        align-items: center;
+    }
+
     &__hamburger {
         padding-right: 0;
 
@@ -39,13 +46,13 @@
     }
     
     &__nav {
-        
         &-list {
             position: absolute;
+            z-index: $z4;
             bottom: 0;
             left: 0;
             width: 100vw;
-            height: 80%;
+            height: 85%;
             background-color: $blueDarkMain;
             padding: 4rem;
             display: flex;

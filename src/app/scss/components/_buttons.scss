@@ -1,0 +1,22 @@
+.btn {
+    display: block;
+    width: 80%;
+    margin: 3rem auto;
+    padding: 1.8rem;
+    border: none;
+    border-radius: 4rem;
+    font-size: $subtitleFontSize;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, $cyanAccent, $blueAccent);
+
+    transition: transform .2s ease-in-out, background-image .2s ease-in-out;
+
+    @include media('>=laptop') {
+
+        &:hover {
+            transform: scale(1.02);
+            background-image: linear-gradient(to right top, $cyanAccent,$blueAccent);
+        }
+    }
+}

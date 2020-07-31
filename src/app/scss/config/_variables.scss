@@ -13,8 +13,8 @@
     --title-font: 'Raleway', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 
-    --title-font-size: 4rem;
-    --subtitle-font-size: 2.5rem;
+    --title-font-size: 2.9rem;
+    --subtitle-font-size: 1.8rem;
     --body-font-size: --subtitle-font-size;
     --small-font-size: 2rem;
     --min-font-size: 1.8rem;
@@ -36,7 +36,7 @@
     // General Size
     --max-width: 120rem;
 
-    --logo-widht:  16.3rem;
+    --logo-widht:  14rem;
     --logo-height:  5rem;
 
     @include media('>=laptop') {
@@ -56,11 +56,13 @@ $light: var(--light);
 
 $titleFont: var(--title-font);
 $bodyFont: var(--body-font);
+
 $titleFontSize: var(--title-font-size);
 $subtitleFontSize: var(--subtitle-font-size);
 $bodyFontSize: var(--body-font-size);
 $smallFontSize: var(--small-font-size);
 $minFontSize: var(--min-font-size);
+
 $lightW: var(--light-w);
 $boldW: var(--bold-w);
 
@@ -68,6 +70,7 @@ $maxWidth: var(--max-width);
 $logoWidht: var(--logo-widht);
 $logoHeight: var(--logo-height);
 
+$zLast: -9999;
 $z1: 1;
 $z2: 2;
 $z3: 3;
