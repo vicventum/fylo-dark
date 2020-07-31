@@ -1,0 +1,68 @@
+.header {
+    --hide: hidden;
+
+    &.open {
+        .overlay {
+            visibility: initial;
+        }
+
+        .header__nav-list {
+            transform: translateX(0%);
+        }
+    }
+
+    // Overlay by Defect
+    .overlay {
+        position: fixed;
+        z-index: $z1;
+        
+        top: 5rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      
+        background-image: linear-gradient(to right,$blueDarkIntro, salmon);
+        
+        transition: visibility 1s ;
+        transition: all 1s;
+        visibility: hidden;
+    }
+
+    &__hamburger {
+        padding-right: 0;
+
+        &-bars,
+        &-bars::before,
+        &-bars::after{
+            background-color: $light;
+        }
+    }
+    
+    &__nav {
+        
+        &-list {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 80%;
+            background-color: $blueDarkMain;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            transform: translateX(-100%);
+            transition: transform .3s ease-in-out;
+        }
+
+        &-item {
+            border-bottom: 1px solid $light;
+            width: 100%;
+        }
+        &-link {
+            display: block;
+            font-size: 2rem;
+        }
+    }
+}

@@ -33,21 +33,38 @@
     <div id="header" class="header">
 
         <!-- Overlay -->
-        <div id="" class="overlay animated-fade"></div>
+        <!-- <div id="overlay" class="overlay animated-fade"></div> -->
 
-        <div class="header__nav u-box u-box--pall">
+        <div class="header__nav b-box b-box--pall v-flex j-content-between">
 
             <!-- Logo -->
             <a href="#" class="header__logo">
-                <img src="./img/logo.svg" alt="Logo Fylo Dark">
+                <img src="img/logo.svg" alt="Logo Fylo Dark">
             </a>
 
             <!-- Hamburguer -->
-            <button id="iconMenu" class="hamburger hamburger--collapse" type="button">
+            <button id="iconHamburger" class="header__hamburger hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                    <span class="header__hamburger-bars hamburger-inner"></span>
                 </span>
             </button>
+
+            <!-- Navegation -->
+            <nav class="header__nav-list
+            v-flex j-content-between a-items-center l:w-2/5">
+                <li class="header__nav-item">
+                    <a href="#get" class="header__nav-link">Get</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#features" class="header__nav-link">Features</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#team" class="header__nav-link">Team</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#signIn" class="header__nav-link">Sign in</a>
+                </li>
+            </nav>
 
         </div>
 

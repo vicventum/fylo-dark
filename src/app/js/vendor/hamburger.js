@@ -1,8 +1,9 @@
 // Look for .hamburger
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.getElementById("iconHamburger"),
+  header = document.getElementById('header')
 // On click
 hamburger.addEventListener("click", () => {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
-  // Do something else, like open/close menu
+  header.classList.toggle("open");
 });

@@ -5,24 +5,26 @@
         margin: 0 auto;
     
         &--pall {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
-            padding-left: 5.5rem;
-            padding-right: 5.5rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
     
-            @include media('>=laptop') {
-                padding-top: 9.6rem;
-                padding-bottom: 9.6rem;
+            @include media('>=120rem') {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     
         &--py {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
     
             @include media('>=laptop') {
-                padding-top: 9.6rem;
-                padding-bottom: 9.6rem;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
             }
         }
         &--px {
@@ -31,18 +33,18 @@
         }
     
         &--pt {
-            padding-top: 10rem;
+            padding-top: 5rem;
             
             @include media('>=laptop') {
-                padding-top: 9.6rem;
+                padding-top: 5rem;
                 
             }
         }
         &--pb {
-            padding-bottom: 10rem;
+            padding-bottom: 5rem;
     
             @include media('>=laptop') {
-                padding-bottom: 9.6rem;
+                padding-bottom: 5rem;
                 
             }
         }

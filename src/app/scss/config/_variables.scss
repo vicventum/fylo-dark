@@ -36,10 +36,13 @@
     // General Size
     --max-width: 120rem;
 
-    --logo-desktop-widht:  18rem;
-    --logo-desktop-height:  5.5rem;
-    --logo-mobile-widht:  16.3rem;
-    --logo-mobile-height:  5rem;
+    --logo-widht:  16.3rem;
+    --logo-height:  5rem;
+
+    @include media('>=laptop') {
+        --logo-widht:  18rem;
+        --logo-height:  5.5rem;
+    }
 }
 
 // Sass
@@ -62,10 +65,13 @@ $lightW: var(--light-w);
 $boldW: var(--bold-w);
 
 $maxWidth: var(--max-width);
-$logoDesktopWidht: var(--logo-desktop-widht);
-$logoDesktopHeight: var(--logo-desktop-height);
-$logoMobileWidht: var(--logo-mobile-widht);
-$logoMobileHeight: var(--logo-mobile-height);
+$logoWidht: var(--logo-widht);
+$logoHeight: var(--logo-height);
+
+$z1: 1;
+$z2: 2;
+$z3: 3;
+$z4: 4;
 
 // Breakpoints
 $breakpoints: (
