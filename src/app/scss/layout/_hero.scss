@@ -1,5 +1,7 @@
 .hero {
     position: relative;
+    background-color: $blueDarkIntro;
+    z-index: $zLast;
 
     &::before,
     &::after {

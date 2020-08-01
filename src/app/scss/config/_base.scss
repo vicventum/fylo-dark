@@ -68,14 +68,15 @@
         }
     }
     &-hd {
-        font-size: $titleFontSize;
         &1 {
+            font-size: $titleFontSize;
             margin-top: rfs(2rem);
             margin-bottom: rfs(3rem);
             
         }
 
         &2 {
+            font-size: $title2FontSize;
             margin-bottom: rfs(5rem);
 
         }
