@@ -1,22 +1,53 @@
 .btn {
     display: block;
-    width: 80%;
-    margin: 3rem auto;
-    padding: 1.8rem;
     border: none;
-    border-radius: 4rem;
-    font-size: $subtitleFontSize;
-    color: white;
-    cursor: pointer;
-    background-image: linear-gradient(to right, $cyanAccent, $blueAccent);
+    
+    &--cta {
+        margin: 3rem auto;
+        font-size: $subtitleFontSize;
+        padding: 1.8rem;
+        width: 80%;
+        border-radius: 4rem;
+        color: white;
+        cursor: pointer;
+        background-image: linear-gradient(to right, $cyanAccent, $blueAccent);
 
-    transition: transform .2s ease-in-out, background-image .2s ease-in-out;
+        transition: transform .2s ease-in-out, background-image .2s ease-in-out;
 
-    @include media('>=laptop') {
+        @include media('>=laptop') {
+    
+            &:hover {
+                transform: scale(1.02);
+                background-image: linear-gradient(to right top, $cyanAccent, $blueAccent);
+            }
+        }
+    }
+
+    &--link {
+        display: inline-block;
+        padding-bottom: .5rem;
+        font-size: $bodyFontSize;
+        color: $cyanAccent;
+        border-bottom: 1px solid $cyanAccent;
 
         &:hover {
-            transform: scale(1.02);
-            background-image: linear-gradient(to right top, $cyanAccent,$blueAccent);
+            border-bottom: 1px solid $light;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 2.2rem;
+            height: 2.2rem;
+
+            margin-left: 5px;
+            margin-bottom: -5px;
+
+            background-image: url(../../img/icon-arrow.svg);
+
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-size: contain;
         }
     }
 }

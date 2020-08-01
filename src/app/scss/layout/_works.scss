@@ -1,0 +1,16 @@
+.works {
+    
+    &__img {
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        font-size: $title2FontSize;
+        margin-bottom: 3rem;
+    }
+
+    &__desc {
+        font-size: $bodyFontSize;
+        margin-bottom: 2rem;
+    }
+}
