@@ -1,0 +1,42 @@
+.signin {
+    position: absolute;
+    top: -250px;
+
+    left: 0;
+
+    background-color: $blueDarkIntro;
+    padding: 6rem 4rem;
+    border-radius: 15px;
+    text-align: center;
+
+
+    &-container {
+        position: relative;
+        margin-top: 30rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    &__title,
+    &__desc {
+        margin-bottom: 3rem;
+    }
+    &__input,
+    &__btn {
+        width: 100%;
+    }
+
+
+    &__input {
+        padding: 1.8rem;
+        border-radius: 4rem;
+        border: none;
+        color: gray;
+    }
+
+    &__btn {
+        margin-bottom: 0;
+    }
+
+
+}

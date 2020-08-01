@@ -316,6 +316,37 @@ img {
   background-size: contain;
 }
 
+.signin {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  background-color: var(--blue-dark-intro);
+  padding: 6rem 4rem;
+  border-radius: 15px;
+  text-align: center;
+}
+.signin-container {
+  position: relative;
+  margin-top: 30rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.signin__title, .signin__desc {
+  margin-bottom: 3rem;
+}
+.signin__input, .signin__btn {
+  width: 100%;
+}
+.signin__input {
+  padding: 1.8rem;
+  border-radius: 4rem;
+  border: none;
+  color: gray;
+}
+.signin__btn {
+  margin-bottom: 0;
+}
+
 .header {
   --hide: hidden;
   background-color: var(--blue-dark-intro);
@@ -532,6 +563,10 @@ img {
 .team__bio-position {
   font-size: var(--min-font-size);
   font-weight: var(--light-w);
+}
+
+.footer {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
