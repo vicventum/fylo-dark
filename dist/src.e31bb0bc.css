@@ -7,15 +7,15 @@
   --blue-dark-testimonial: hsl(219, 30%, 18%);
   --cyan-accent: hsl(176, 68%, 64%);
   --blue-accent: hsl(198, 60%, 50%);
-  --light: hsl(0, 0%, 100%);
+  --light: hsla(0, 0%, 100%, 0.8);
   --title-font: "Raleway", sans-serif;
   --body-font: "Open Sans", sans-serif;
   --title-font-size: 2.9rem;
   --title2-font-size: 2.4rem;
   --subtitle-font-size: 1.8rem;
   --body-font-size: 1.7rem;
-  --small-font-size: 2rem;
-  --min-font-size: 1.8rem;
+  --small-font-size: 1.5rem;
+  --min-font-size: 1.3rem;
   --light-w: 400;
   --bold-w: 700;
   --max-width: 120rem;
@@ -68,6 +68,7 @@ body.no-scroll {
 h1, h2, h3, h4 {
   font-family: var(--title-font);
   font-weight: var(--bold-w);
+  color: white;
   line-height: 1.4;
 }
 
@@ -469,6 +470,68 @@ img {
 .works__desc {
   font-size: var(--body-font-size);
   margin-bottom: 2rem;
+}
+
+.team {
+  margin: 7rem 1rem;
+}
+.team__card {
+  padding: 3rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: var(--blue-dark-testimonial);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.team__card:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+}
+.team__card:first-of-type::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2.9rem;
+  left: 10px;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(/bg-quotes.ee5fd274.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.team__desc {
+  font-size: var(--small-font-size);
+  margin-bottom: 3rem;
+  line-height: 1.9;
+}
+.team__bio-img {
+  width: 4.5rem;
+  margin-right: 1.5rem;
+}
+.team__bio-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.team__bio-title {
+  font-size: var(--small-font-size);
+  font-weight: var(--bold-w);
+}
+.team__bio-position {
+  font-size: var(--min-font-size);
+  font-weight: var(--light-w);
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

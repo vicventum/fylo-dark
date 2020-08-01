@@ -194,7 +194,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\img\\icon-arrow.svg":[["icon-arrow.6704f3c1.svg","img/icon-arrow.svg"],"img/icon-arrow.svg"],"./..\\..\\img\\bg-curvy-mobile.svg":[["bg-curvy-mobile.a55916d6.svg","img/bg-curvy-mobile.svg"],"img/bg-curvy-mobile.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/js/vendor/hamburger.js":[function(require,module,exports) {
+},{"./..\\..\\img\\icon-arrow.svg":[["icon-arrow.6704f3c1.svg","img/icon-arrow.svg"],"img/icon-arrow.svg"],"./..\\..\\img\\bg-curvy-mobile.svg":[["bg-curvy-mobile.a55916d6.svg","img/bg-curvy-mobile.svg"],"img/bg-curvy-mobile.svg"],"./..\\..\\img\\bg-quotes.png":[["bg-quotes.ee5fd274.png","img/bg-quotes.png"],"img/bg-quotes.png"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/js/vendor/hamburger.js":[function(require,module,exports) {
 // Look for .hamburger
 var hamburger = document.getElementById("iconHamburger"),
     header = document.getElementById('header'); // On click
@@ -244,7 +244,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60045" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54307" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

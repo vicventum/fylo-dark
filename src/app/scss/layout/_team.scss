@@ -1,0 +1,66 @@
+.team {
+    margin: 7rem 1rem;
+    $size: 3rem;
+
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    &__card {
+        padding: $size;
+        // margin-top: $size;
+        position: relative;
+        border-radius: 10px;
+
+        background-color: $blueDarkTestimonial;
+
+        transition: transform .3s ease-in-out;
+        
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        &:first-of-type::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: -$size + 0.1;
+            left: 10px;
+            width: $size;
+            height: $size;
+    
+            background-image: url(../../img/bg-quotes.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    &__desc {
+        font-size: $smallFontSize;
+        margin-bottom: $size;
+        line-height: 1.9;
+    }
+
+    &__bio {
+        
+        &-img {
+            width: 4.5rem;
+            margin-right: 1.5rem;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        &-title {
+            font-size: $smallFontSize;
+            font-weight: $boldW;
+        }
+        
+        &-position {
+            font-size: $minFontSize;
+            font-weight: $lightW;
+        }
+    }
+}
