@@ -42,6 +42,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -491,6 +492,9 @@ img {
   font-size: var(--body-font-size);
 }
 
+.works {
+  margin: 10rem 0;
+}
 .works__img {
   margin-bottom: 4rem;
 }
@@ -504,7 +508,7 @@ img {
 }
 
 .team {
-  margin: 7rem 1rem;
+  margin: 15rem 1rem 10rem 1rem;
 }
 .team__card {
   padding: 3rem;
@@ -566,7 +570,7 @@ img {
 }
 
 .footer-container {
-  padding-top: 35rem;
+  padding-top: 40rem;
 }
 .footer__desc-container {
   display: -webkit-box;
@@ -590,8 +594,11 @@ img {
 .footer__links {
   padding-top: 2rem;
 }
+.footer__links p {
+  margin-bottom: 2rem;
+}
 .footer__atribution {
-  padding: 1rem;
+  padding: 1rem 4rem;
   margin-top: 2rem;
   background-color: #080f19;
   font-size: 1.2rem;

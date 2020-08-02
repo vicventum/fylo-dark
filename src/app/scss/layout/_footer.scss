@@ -1,7 +1,7 @@
 .footer {
     
     &-container {
-        padding-top: 35rem;
+        padding-top: 40rem;
     }
     &__desc-container {
         display: flex;
@@ -26,6 +26,11 @@
 
     &__links {
         padding-top: 2rem;
+
+        p {
+            margin-bottom: 2rem;
+            
+        }
     }
 
     &__socialIcons {
@@ -33,7 +38,7 @@
     }
 
     &__atribution {
-        padding: 1rem;
+        padding: 1rem 4rem;
         margin-top: 2rem;
         background-color: darken(hsl(216, 53%, 9%), 2.5%);
         
