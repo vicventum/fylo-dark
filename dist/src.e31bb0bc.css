@@ -156,12 +156,6 @@ img {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-@media (min-width: 1024px) {
-  .b-box--px {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
 .b-box--pt {
   padding-top: 5rem;
 }
@@ -649,7 +643,8 @@ img {
 }
 
 .team {
-  margin: 15rem 1rem 10rem 1rem;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
 }
 .team__card {
   padding: 3rem;
