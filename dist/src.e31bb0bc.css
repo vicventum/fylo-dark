@@ -158,8 +158,8 @@ img {
 }
 @media (min-width: 1024px) {
   .b-box--px {
-    padding-left: 18rem;
-    padding-right: 18rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 .b-box--pt {
@@ -420,7 +420,7 @@ img {
 .header__hamburger-bars, .header__hamburger-bars::before, .header__hamburger-bars::after {
   background-color: var(--light);
 }
-@media (min-width: 1400px) {
+@media (min-width: 1024px) {
   .header__nav {
     padding-left: 0;
     padding-right: 0;
@@ -623,14 +623,25 @@ img {
 }
 
 .works {
-  margin: 10rem 0;
+  margin: 10rem auto;
 }
 .works__img {
+  margin: 0 auto;
   margin-bottom: 4rem;
+}
+@media (min-width: 520px) and (max-width: 767px) {
+  .works__img {
+    width: 65vw;
+  }
 }
 .works__title {
   font-size: var(--title2-font-size);
   margin-bottom: 3rem;
+}
+@media (min-width: 1024px) {
+  .works__title {
+    font-size: 3.8rem;
+  }
 }
 .works__desc {
   font-size: var(--body-font-size);

@@ -1,13 +1,22 @@
 .works {
-    margin: 10rem 0;
+    margin: 10rem auto;
     
     &__img {
+        margin: 0 auto;
         margin-bottom: 4rem;
+
+        @include media('>=520px', '<tablet') {
+            width: 65vw;
+        }
     }
 
     &__title {
         font-size: $title2FontSize;
         margin-bottom: 3rem;
+
+        @include media('>=laptop') {
+            font-size: 3.8rem;
+        }
     }
 
     &__desc {
