@@ -53,13 +53,13 @@
 
     &-hide-for-mobile {
         // Hide for tablet and mobile
-        @include media('<laptop') {
+        @include media('<tablet') {
             display: none!important;
         }
     }
     &-hide-for-desktop {
         // Hide for desktop viewport widths
-        @include media('>=laptop') {
+        @include media('>=tablet') {
             display: none!important;
         }
     }

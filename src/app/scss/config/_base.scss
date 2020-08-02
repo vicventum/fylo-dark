@@ -9,10 +9,14 @@
             padding-bottom: 2.5rem;
             padding-left: 4rem;
             padding-right: 4rem;
-    
-            @include media('>=120rem') {
+
+            @include media('>=laptop') {
                 padding-top: 5rem;
                 padding-bottom: 5rem;
+            }
+    
+            @include media('>=120rem') {
+                
                 padding-left: 0;
                 padding-right: 0;
             }
