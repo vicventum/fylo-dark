@@ -13,19 +13,23 @@
     --title-font: 'Raleway', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 
-    --title-font-size: 2.9rem;
+    --title-font-size: 2.7rem;
     --title2-font-size: 2.4rem;
     --subtitle-font-size: 1.8rem;
     --body-font-size: 1.7rem;
     --small-font-size: 1.5rem;
     --min-font-size: 1.3rem;
 
-    @include media('>=laptop') {
-        --title-font-size: 3rem;
-        --subtitle-font-size: 1.8rem;
-        --body-font-size: 1.4rem;
-        --small-font-size: 1.2rem;
-        --min-font-size: 0.8rem;
+    @include media('>=540px') {
+        --title-font-size: 2.9rem;
+    }
+
+    @include media('>=desktop') {
+        --title-font-size: 4rem;
+        --subtitle-font-size: 2rem;
+        --body-font-size: 1.9rem;
+        --small-font-size: 1.6rem;
+        --min-font-size: 1.4rem;
     }
 
 

@@ -47,6 +47,11 @@
     }
     
     &__nav {
+        @include media('>=desktop') {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         &-list {
             position: absolute;
             z-index: $z4;
