@@ -31,8 +31,7 @@
   :root {
     --title-font-size: 4rem;
     --subtitle-font-size: 2rem;
-    --body-font-size: 1.9rem;
-    --small-font-size: 1.6rem;
+    --body-font-size: 1.8rem;
     --min-font-size: 1.4rem;
   }
 }
@@ -127,12 +126,20 @@ img {
   .b-box--pall {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 @media (min-width: 120rem) {
   .b-box--pall {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .b-box--pall {
+    padding-left: 18rem;
+    padding-right: 18rem;
   }
 }
 .b-box--py {
@@ -148,6 +155,12 @@ img {
 .b-box--px {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+@media (min-width: 1024px) {
+  .b-box--px {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
 }
 .b-box--pt {
   padding-top: 5rem;
@@ -499,12 +512,12 @@ img {
 }
 @media (min-width: 768px) {
   .hero {
-    --size: 10rem;
+    --size: 5rem;
   }
 }
 @media (min-width: 1024px) {
   .hero {
-    --size: 26rem;
+    --size: 15rem;
   }
 }
 .hero__img {
@@ -560,8 +573,21 @@ img {
   }
 }
 
+.feature {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 8rem;
+}
+@media (min-width: 1024px) {
+  .feature {
+    -webkit-column-gap: 10rem;
+       -moz-column-gap: 10rem;
+            column-gap: 10rem;
+  }
+}
 .feature__item {
-  padding: 5.5rem 0;
+  padding-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,18 +599,17 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  -o-transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 0.5s;
+  -o-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
 }
 .feature__item:hover {
-  -webkit-box-shadow: 0px 1px 0px 0px white;
-          box-shadow: 0px 1px 0px 0px white;
+  border-bottom: 1px solid white;
 }
 .feature__img {
   width: 8rem;
+  margin-bottom: 3rem;
 }
 .feature__img.shield {
   width: 7rem;
@@ -594,7 +619,7 @@ img {
   margin-bottom: 1.5rem;
 }
 .feature__desc {
-  font-size: var(--body-font-size);
+  font-size: var(--small-font-size);
 }
 
 .works {

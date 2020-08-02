@@ -9,10 +9,10 @@
     padding-right: var(--size);
 
     @include media('>=tablet') {
-        --size: 10rem;
+        --size: 5rem;
     }
     @include media('>=laptop') {
-        --size: 26rem;
+        --size: 15rem;
     }
 
     &__img {

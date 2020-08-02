@@ -1,22 +1,30 @@
 .feature {
+    align-items: baseline;
+    gap: 8rem;
+
+    @include media('>=laptop') {
+        column-gap: 10rem;
+    }
 
     &__item {
-        padding: 5.5rem 0;
+        padding-bottom: 2rem;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         
-        transition: box-shadow .3s;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom .5s;
         
         &:hover {
-            box-shadow: 0px 1px 0px 0px white ;
+            border-bottom: 1px solid white;
         }
     }
 
     &__img {
         width: 8rem;
+        margin-bottom: 3rem;
 
         &.shield {
             width: 7rem;
@@ -29,7 +37,7 @@
     }
 
     &__desc {
-        font-size: $bodyFontSize;
+        font-size: $smallFontSize;
         
     }
 }
