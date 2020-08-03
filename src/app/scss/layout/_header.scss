@@ -34,6 +34,10 @@
         width: $logoWidht;
         display: flex;
         align-items: center;
+
+        @include media('>=laptop', '<desktop') {
+            margin-left: 2rem;         
+        }
     }
 
     &__hamburger {
@@ -48,8 +52,8 @@
     
     &__nav {
         @include media('>=laptop') {
-            padding-left: 0;
-            padding-right: 0;
+            padding-left: 0rem;
+            padding-right: 0rem;
         }
 
         &-list {
