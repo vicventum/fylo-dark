@@ -16,8 +16,8 @@
 
         transition: transform .3s ease-in-out;
         
-        &:hover {
-            transform: scale(1.03);
+        @include media('>=tablet') {
+            &:hover { transform: scale(1.03); }
         }
 
         &:first-of-type::before{

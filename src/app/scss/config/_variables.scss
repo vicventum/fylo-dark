@@ -41,12 +41,12 @@
     // General Size
     --max-width: 120rem;
 
-    --logo-widht:  14rem;
+    --logo-widht:  12rem;
     --logo-height:  5rem;
 
     @include media('>=laptop') {
-        --logo-widht:  18rem;
-        --logo-height:  5.5rem;
+        --logo-widht:  16rem;
+        --logo-height:  5rem;
     }
 }
 

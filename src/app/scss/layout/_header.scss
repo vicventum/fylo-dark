@@ -40,16 +40,6 @@
         }
     }
 
-    &__hamburger {
-        padding-right: 0;
-
-        &-bars,
-        &-bars::before,
-        &-bars::after{
-            background-color: $light;
-        }
-    }
-    
     &__nav {
         @include media('>=laptop') {
             padding-left: 0rem;
@@ -62,7 +52,7 @@
             bottom: 0;
             left: 0;
             width: 100vw;
-            height: 85%;
+            height: 80%;
             background-color: $blueDarkMain;
             padding: 4rem;
             display: flex;

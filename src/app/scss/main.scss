@@ -1,5 +1,9 @@
+//-- vendor
 // include-media
 @import "../../../node_modules/include-media/dist/include-media";
+// hamburgers
+@import "vendor/hamburger-config.scss";
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 // Config
 @import "config/variables";
@@ -7,9 +11,7 @@
 @import "config/base";
 
 // Helpers
-@import "helpers/mixins";
 @import "helpers/utitlties";
-@import "helpers/animations";
 
 // Components
 @import "components/buttons";
