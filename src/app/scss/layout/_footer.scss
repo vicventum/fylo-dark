@@ -31,10 +31,6 @@
     &__links {
         padding-top: 2rem;
 
-        @include media('>=laptop') {
-            transform: translateX(6rem);
-        }
-
         p {
             margin-bottom: 2rem;
             a {
@@ -54,6 +50,9 @@
         a:not(:last-of-type) {
             margin-right: 3rem;
         }
+        @include media('>=tablet') {
+            padding-top: 2rem;
+        }
     }
 
     &__atribution {
@@ -66,7 +65,7 @@
 
         @include media('>=laptop') {
             padding: 1rem 5rem;
-            font-size: 1.4rem;
+            font-size: 1.45rem;
         }
 
         a {

@@ -12,7 +12,7 @@
         --size: 5rem;
     }
     @include media('>=laptop') {
-        --size: 15rem;
+        --size: 18rem;
     }
 
     &__img {
