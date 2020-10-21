@@ -1,11 +1,13 @@
 //-- vendor
-// v-grid
-@import "vendor/v-grid.min.css";
 // include-media
 @import "../../../node_modules/include-media/dist/include-media";
 // hamburgers
 @import "vendor/hamburger-config.scss";
 @import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+// font awesome
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+// v-grid
+@import "./vendor/v-grid.min.css";
 
 // Config
 @import "config/variables";
