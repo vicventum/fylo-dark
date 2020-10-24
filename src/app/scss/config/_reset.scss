@@ -22,21 +22,46 @@ body {
     color: $light;
     overflow-x: hidden;
 
+    scrollbar-width: thin;
+    scrollbar-color: hsl(176, 68%, 64%) transparent;
+
+
+    &::-webkit-scrollbar {
+        width: 6px
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: hsl(176, 68%, 64%);
+        -webkit-transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease-in-out;
+        &::-webkit-scrollbar-thumb:hover {
+            background-color:hsl(176, 68%, 60%);
+        }
+    }
+
+
     &.no-scroll {
         overflow: hidden;
     }
 
-    @include media('>=laptop') {
-
-    }
+    @include media('>=laptop') {}
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
     font-family: $titleFont;
     font-weight: $boldW;
     color: white;
     line-height: 1.4;
 
 }
+
 p {
     font-family: $bodyFont;
     font-weight: $lightW;
@@ -48,6 +73,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 li {
     list-style: none;
 }
@@ -59,7 +85,9 @@ a {
     transition: all .23s ease-in-out;
     cursor: pointer;
 
-    &:hover{color: $cyanAccent;}
+    &:hover {
+        color: $cyanAccent;
+    }
 }
 
 img {
