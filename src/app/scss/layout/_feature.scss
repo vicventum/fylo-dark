@@ -6,6 +6,7 @@
         column-gap: 10rem;
     }
 
+
     &__item {
         padding-bottom: 2rem;
 
@@ -15,7 +16,8 @@
         text-align: center;
         
         border-bottom: 1px solid transparent;
-        transition: border-bottom .5s;
+        transition-property: border-bottom;
+        transition-duration: .5s;
         
         &:hover {
             border-bottom: 1px solid white;

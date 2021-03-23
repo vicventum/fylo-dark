@@ -189,17 +189,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\font\\fontello.eot":[["fontello.fcf88920.eot","app/scss/vendor/fontello/font/fontello.eot"],"app/scss/vendor/fontello/font/fontello.eot"],"./..\\font\\fontello.woff2":[["fontello.aad6f67b.woff2","app/scss/vendor/fontello/font/fontello.woff2"],"app/scss/vendor/fontello/font/fontello.woff2"],"./..\\font\\fontello.woff":[["fontello.423fa25a.woff","app/scss/vendor/fontello/font/fontello.woff"],"app/scss/vendor/fontello/font/fontello.woff"],"./..\\font\\fontello.ttf":[["fontello.0d4cef76.ttf","app/scss/vendor/fontello/font/fontello.ttf"],"app/scss/vendor/fontello/font/fontello.ttf"],"./..\\font\\fontello.svg":[["fontello.7d38771b.svg","app/scss/vendor/fontello/font/fontello.svg"],"app/scss/vendor/fontello/font/fontello.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/scss/vendor/v-grid.min.css":[function(require,module,exports) {
+},{"./..\\font\\fontello.woff2":[["fontello.aad6f67b.woff2","app/scss/vendor/fontello/font/fontello.woff2"],"app/scss/vendor/fontello/font/fontello.woff2"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/scss/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/scss/main.scss":[function(require,module,exports) {
+},{"./vendor/fontello/css/fontello.css":"app/scss/vendor/fontello/css/fontello.css","./..\\..\\img\\icon-arrow.svg":[["icon-arrow.6704f3c1.svg","img/icon-arrow.svg"],"img/icon-arrow.svg"],"./..\\..\\img\\bg-curvy-mobile.svg":[["bg-curvy-mobile.a55916d6.svg","img/bg-curvy-mobile.svg"],"img/bg-curvy-mobile.svg"],"./..\\..\\img\\bg-quotes.png":[["bg-quotes.ee5fd274.png","img/bg-quotes.png"],"img/bg-quotes.png"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/vendor/sal.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./vendor/fontello/css/fontello.css":"app/scss/vendor/fontello/css/fontello.css","./vendor/v-grid.min.css":"app/scss/vendor/v-grid.min.css","./..\\..\\img\\icon-arrow.svg":[["icon-arrow.6704f3c1.svg","img/icon-arrow.svg"],"img/icon-arrow.svg"],"./..\\..\\img\\bg-curvy-mobile.svg":[["bg-curvy-mobile.a55916d6.svg","img/bg-curvy-mobile.svg"],"img/bg-curvy-mobile.svg"],"./..\\..\\img\\bg-quotes.png":[["bg-quotes.ee5fd274.png","img/bg-quotes.png"],"img/bg-quotes.png"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/js/vendor/hamburger-config.js":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app/js/vendor/hamburger-config.js":[function(require,module,exports) {
 // Look for .hamburger
 var hamburger = document.getElementById("iconHamburger"),
     header = document.getElementById('header'),
@@ -219,17 +219,228 @@ links.forEach(function (link) {
     body.classList.remove("no-scroll");
   });
 });
-},{}],"app/js/app.js":[function(require,module,exports) {
+},{}],"../node_modules/@babel/runtime/helpers/typeof.js":[function(require,module,exports) {
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+},{}],"app/vendor/sal.js":[function(require,module,exports) {
+var define;
+"use strict";
+
+var _typeof2 = _interopRequireDefault(require("@babel/runtime/helpers/typeof"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+!function (e, t) {
+  "object" == (typeof exports === "undefined" ? "undefined" : (0, _typeof2.default)(exports)) && "object" == (typeof module === "undefined" ? "undefined" : (0, _typeof2.default)(module)) ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == (typeof exports === "undefined" ? "undefined" : (0, _typeof2.default)(exports)) ? exports.sal = t() : e.sal = t();
+}(void 0, function () {
+  return function () {
+    "use strict";
+
+    var e = {
+      855: function _(e, t, n) {
+        function r(e, t) {
+          var n = Object.keys(e);
+
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            t && (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })), n.push.apply(n, r);
+          }
+
+          return n;
+        }
+
+        function o(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {};
+            t % 2 ? r(Object(n), !0).forEach(function (t) {
+              a(e, t, n[t]);
+            }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : r(Object(n)).forEach(function (t) {
+              Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
+            });
+          }
+
+          return e;
+        }
+
+        function a(e, t, n) {
+          return t in e ? Object.defineProperty(e, t, {
+            value: n,
+            enumerable: !0,
+            configurable: !0,
+            writable: !0
+          }) : e[t] = n, e;
+        }
+
+        n.d(t, {
+          default: function _default() {
+            return E;
+          }
+        });
+
+        var s = "Sal was not initialised! Probably it is used in SSR.",
+            i = "Your browser does not support IntersectionObserver!\nGet a polyfill from here:\nhttps://github.com/w3c/IntersectionObserver/tree/master/polyfill",
+            l = {
+          root: null,
+          rootMargin: "0% 50%",
+          threshold: .5,
+          animateClassName: "sal-animate",
+          disabledClassName: "sal-disabled",
+          enterEventName: "sal:in",
+          exitEventName: "sal:out",
+          selector: "[data-sal]",
+          once: !0,
+          disabled: !1
+        },
+            c = [],
+            u = null,
+            d = function d(e) {
+          e && e !== l && (l = o(o({}, l), e));
+        },
+            f = function f(e) {
+          e.classList.remove(l.animateClassName);
+        },
+            b = function b(e, t) {
+          var n = new CustomEvent(e, {
+            bubbles: !0,
+            detail: t
+          });
+          t.target.dispatchEvent(n);
+        },
+            p = function p() {
+          document.body.classList.add(l.disabledClassName);
+        },
+            m = function m() {
+          u.disconnect(), u = null;
+        },
+            v = function v() {
+          return l.disabled || "function" == typeof l.disabled && l.disabled();
+        },
+            y = function y(e, t) {
+          e.forEach(function (e) {
+            var n = e.target,
+                r = void 0 !== n.dataset.salRepeat,
+                o = void 0 !== n.dataset.salOnce,
+                a = r || !(o || l.once);
+            e.intersectionRatio >= l.threshold ? (function (e) {
+              e.target.classList.add(l.animateClassName), b(l.enterEventName, e);
+            }(e), a || t.unobserve(n)) : a && function (e) {
+              f(e.target), b(l.exitEventName, e);
+            }(e);
+          });
+        },
+            O = function O() {
+          var e = [].filter.call(document.querySelectorAll(l.selector), function (e) {
+            return !function (e) {
+              return e.classList.contains(l.animateClassName);
+            }(e, l.animateClassName);
+          });
+          return e.forEach(function (e) {
+            return u.observe(e);
+          }), e;
+        },
+            h = function h() {
+          p(), m();
+        },
+            g = function g() {
+          document.body.classList.remove(l.disabledClassName), u = new IntersectionObserver(y, {
+            root: l.root,
+            rootMargin: l.rootMargin,
+            threshold: l.threshold
+          }), c = O();
+        },
+            w = function w() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+          m(), Array.from(document.querySelectorAll(l.selector)).forEach(f), d(e), g();
+        },
+            j = function j() {
+          var e = O();
+          c.push(e);
+        };
+
+        var E = function E() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l;
+          if (d(e), "undefined" == typeof window) return console.warn(s), {
+            elements: c,
+            disable: h,
+            enable: g,
+            reset: w,
+            update: j
+          };
+          if (!window.IntersectionObserver) throw p(), Error(i);
+          return v() ? p() : g(), {
+            elements: c,
+            disable: h,
+            enable: g,
+            reset: w,
+            update: j
+          };
+        };
+      }
+    },
+        t = {};
+
+    function n(r) {
+      if (t[r]) return t[r].exports;
+      var o = t[r] = {
+        exports: {}
+      };
+      return e[r](o, o.exports, n), o.exports;
+    }
+
+    return n.d = function (e, t) {
+      for (var r in t) {
+        n.o(t, r) && !n.o(e, r) && Object.defineProperty(e, r, {
+          enumerable: !0,
+          get: t[r]
+        });
+      }
+    }, n.o = function (e, t) {
+      return Object.prototype.hasOwnProperty.call(e, t);
+    }, n(855);
+  }().default;
+});
+},{"@babel/runtime/helpers/typeof":"../node_modules/@babel/runtime/helpers/typeof.js"}],"app/js/vendor/sal-config.js":[function(require,module,exports) {
+"use strict";
+
+var _sal = _interopRequireDefault(require("../../vendor/sal"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _sal.default)({
+  once: false
+});
+},{"../../vendor/sal":"app/vendor/sal.js"}],"app/js/app.js":[function(require,module,exports) {
 
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./app/scss/main.scss");
 
+require("./app/vendor/sal.css");
+
 require("./app/js/vendor/hamburger-config");
 
+require("./app/js/vendor/sal-config");
+
 require("./app/js/app");
-},{"./app/scss/main.scss":"app/scss/main.scss","./app/js/vendor/hamburger-config":"app/js/vendor/hamburger-config.js","./app/js/app":"app/js/app.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./app/scss/main.scss":"app/scss/main.scss","./app/vendor/sal.css":"app/vendor/sal.css","./app/js/vendor/hamburger-config":"app/js/vendor/hamburger-config.js","./app/js/vendor/sal-config":"app/js/vendor/sal-config.js","./app/js/app":"app/js/app.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -257,7 +468,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59726" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53555" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

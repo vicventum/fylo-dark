@@ -20,20 +20,20 @@
             &:hover { transform: scale(1.03); }
         }
 
-        &:first-of-type::before{
-            content: '';
-            display: block;
-            position: absolute;
-            top: -$size + 0.1;
-            left: 10px;
-            width: $size;
-            height: $size;
-    
-            background-image: url(../../img/bg-quotes.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-        }
+    }
+    .sal-wrapper:first-child .team__card::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -$size + 0.1;
+        left: 10px;
+        width: $size;
+        height: $size;
+
+        background-image: url(../../img/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 
     &__desc {

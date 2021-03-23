@@ -27,6 +27,16 @@
       "rfs": {}
     }
   },
+  "@fullhuman/postcss-purgecss": {
+    "content": [
+      "./dist/*.html",
+      "./dist/*.js",
+      "https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+    ],
+    "css": [
+      "./dist/*.css"
+    ]
+  },
   "author": "Victor Alvarez <vicventum.dev@gmail.com>",
   "license": "MIT",
   "dependencies": {
