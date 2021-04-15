@@ -9,4 +9,4 @@ import "./app/vendor/sal.css";
 // Import JavaScript
 import "./app/js/vendor/hamburger-config";
 import "./app/js/vendor/sal-config";
-import "./app/js/app";
+import "./app/js/mq";
